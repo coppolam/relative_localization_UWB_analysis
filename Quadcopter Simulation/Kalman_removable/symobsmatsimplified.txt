@@ -1,0 +1,21 @@
+2^(1/2)/2 ■2^(1/2)/2 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■1 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■1 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■1 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■1 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■1 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■1 ■0 ■
+-(2^(1/2)*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/4 ■(2^(1/2)*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/4 ■0 ■0 ■-2^(1/2)/2 ■-2^(1/2)/2 ■(2^(1/2)*(cos(gam) + sin(gam)))/2 ■(2^(1/2)*(cos(gam) - sin(gam)))/2 ■-(2^(1/2)*(v2*cos(gam) - u2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/2 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■r1m ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■-r1m ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■r2m ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■-r2m ■0 ■0 ■
+(2^(1/2)*(v1dm - r1m*u1))/4 - (2^(1/2)*(u1dm + r1m*v1))/4 + (2^(1/2)*(r1m - r2m)*(v2*cos(gam) + u2*sin(gam)))/2 - (2^(1/2)*(v2*cos(gam) - v1 + u2*sin(gam))*(r1m - u1 + u2*cos(gam) - v2*sin(gam)))/4 - (2^(1/2)*(v2dm - r2m*u2)*(cos(gam) - sin(gam)))/4 - (2^(1/2)*(r1m - r2m)*(v2*cos(gam) - u2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/4 - (2^(1/2)*r1m*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/4 + (3*2^(1/2)*(r1m + v1 - v2*cos(gam) - u2*sin(gam))*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/8 - (2^(1/2)*(r1m + v1 - v2*cos(gam) - u2*sin(gam))*(u1 - 2*v1 - u2*cos(gam) + 2*v2*cos(gam) + 2*u2*sin(gam) + v2*sin(gam)))/4 + (2^(1/2)*cos(gam)*(u2dm + r2m*v2))/2 - (2^(1/2)*sin(gam)*(v2dm - r2m*u2))/2 - (2^(1/2)*(cos(gam) + sin(gam))*(u2dm + r2m*v2))/4 + (3*2^(1/2)*(r1m - u1 + u2*cos(gam) - v2*sin(gam))*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/8 ■(2^(1/2)*(u1dm + r1m*v1))/4 - (2^(1/2)*(v1dm - r1m*u1))/4 - (2^(1/2)*(r1m - r2m)*(u2*cos(gam) - v2*sin(gam)))/2 - (2^(1/2)*(v2dm - r2m*u2)*(cos(gam) - sin(gam)))/4 - (2^(1/2)*(r1m - u1 + u2*cos(gam) - v2*sin(gam))*(2*u1 - v1 - 2*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + 2*v2*sin(gam)))/4 - (2^(1/2)*(r1m - r2m)*(v2*cos(gam) - u2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/4 - (2^(1/2)*r1m*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/4 - (2^(1/2)*(u1 - u2*cos(gam) + v2*sin(gam))*(r1m + v1 - v2*cos(gam) - u2*sin(gam)))/4 + (3*2^(1/2)*(r1m + v1 - v2*cos(gam) - u2*sin(gam))*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/8 + (2^(1/2)*cos(gam)*(v2dm - r2m*u2))/2 + (2^(1/2)*sin(gam)*(u2dm + r2m*v2))/2 - (2^(1/2)*(cos(gam) + sin(gam))*(u2dm + r2m*v2))/4 + (3*2^(1/2)*(r1m - u1 + u2*cos(gam) - v2*sin(gam))*(u1 - v1 - u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)))/8 ■0 ■0 ■(2^(1/2)*(2*u1 - 2*v1 - 2*u2*cos(gam) + 2*v2*cos(gam) + 2*u2*sin(gam) + 2*v2*sin(gam)))/4 ■-(2^(1/2)*(2*u1 - 2*v1 - 2*u2*cos(gam) + 2*v2*cos(gam) + 2*u2*sin(gam) + 2*v2*sin(gam)))/4 ■-(2^(1/2)*(2*u2*sin(2*gam) - 2*u2 + 2*u1*cos(gam) - 2*v1*cos(gam) - 2*u1*sin(gam) + 2*v1*sin(gam) + 2*v2*cos(2*gam)))/4 ■(2^(1/2)*(2*v2 + 2*v2*sin(2*gam) + 2*u1*cos(gam) - 2*v1*cos(gam) + 2*u1*sin(gam) - 2*v1*sin(gam) - 2*u2*cos(2*gam)))/4 ■-(2^(1/2)*(2*u2^2*cos(2*gam) - 2*v2^2*cos(2*gam) - 2*u2dm*cos(gam) + 2*v2dm*cos(gam) + 2*u2dm*sin(gam) + 2*v2dm*sin(gam) - 2*u1*u2*cos(gam) - 2*u1*v2*cos(gam) + 2*u2*v1*cos(gam) + 2*v1*v2*cos(gam) - 2*u1*u2*sin(gam) + 2*u1*v2*sin(gam) + 2*u2*v1*sin(gam) - 2*v1*v2*sin(gam) - 4*u2*v2*sin(2*gam)))/4 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■-r1m^2 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■-r1m^2 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■-r2m^2 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■-r2m^2 ■0 ■

@@ -1,0 +1,21 @@
+0.7071 ■0.7071 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■1.0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■1.0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■1.0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■1.0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■1.0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■1.0 ■0 ■
+0.3536*v1 - 0.3536*u1 + 0.3536*u2*cos(gam) - 0.3536*v2*cos(gam) - 0.3536*u2*sin(gam) - 0.3536*v2*sin(gam) ■0.3536*u1 - 0.3536*v1 - 0.3536*u2*cos(gam) + 0.3536*v2*cos(gam) + 0.3536*u2*sin(gam) + 0.3536*v2*sin(gam) ■0 ■0 ■-0.7071 ■-0.7071 ■0.7071*cos(gam) + 0.7071*sin(gam) ■0.7071*cos(gam) - 0.7071*sin(gam) ■0.7071*u2*cos(gam) - 0.7071*v2*cos(gam) - 0.7071*u2*sin(gam) - 0.7071*v2*sin(gam) ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■r1m ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■-1.0*r1m ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■r2m ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■-1.0*r2m ■0 ■0 ■
+0.3536*v1dm - 0.3536*u1dm + 0.5303*(r1m + v1 - 1.0*v2*cos(gam) - 1.0*u2*sin(gam))*(u1 - 1.0*v1 - 1.0*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)) + 0.7071*cos(gam)*(u2dm + r2m*v2) - 0.3536*r1m*u1 - 0.3536*r1m*v1 - 0.3536*(v2dm - 1.0*r2m*u2)*(cos(gam) - 1.0*sin(gam)) - 0.3536*(cos(gam) + sin(gam))*(u2dm + r2m*v2) - 0.3536*(r1m - 1.0*r2m)*(v2*cos(gam) - 1.0*u2*cos(gam) + u2*sin(gam) + v2*sin(gam)) - 0.7071*sin(gam)*(v2dm - 1.0*r2m*u2) - 0.3536*(v2*cos(gam) - 1.0*v1 + u2*sin(gam))*(r1m - 1.0*u1 + u2*cos(gam) - 1.0*v2*sin(gam)) - 0.3536*r1m*(u1 - 1.0*v1 - 1.0*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)) + 0.5303*(r1m - 1.0*u1 + u2*cos(gam) - 1.0*v2*sin(gam))*(u1 - 1.0*v1 - 1.0*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)) - 0.3536*(r1m + v1 - 1.0*v2*cos(gam) - 1.0*u2*sin(gam))*(u1 - 2.0*v1 - 1.0*u2*cos(gam) + 2.0*v2*cos(gam) + 2.0*u2*sin(gam) + v2*sin(gam)) + 0.7071*(v2*cos(gam) + u2*sin(gam))*(r1m - 1.0*r2m) ■0.3536*u1dm - 0.3536*v1dm - 0.7071*(r1m - 1.0*r2m)*(u2*cos(gam) - 1.0*v2*sin(gam)) + 0.5303*(r1m + v1 - 1.0*v2*cos(gam) - 1.0*u2*sin(gam))*(u1 - 1.0*v1 - 1.0*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)) + 0.3536*r1m*u1 + 0.3536*r1m*v1 + 0.7071*sin(gam)*(u2dm + r2m*v2) - 0.3536*(v2dm - 1.0*r2m*u2)*(cos(gam) - 1.0*sin(gam)) - 0.3536*(r1m - 1.0*u1 + u2*cos(gam) - 1.0*v2*sin(gam))*(2.0*u1 - 1.0*v1 - 2.0*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + 2.0*v2*sin(gam)) - 0.3536*(cos(gam) + sin(gam))*(u2dm + r2m*v2) - 0.3536*(r1m - 1.0*r2m)*(v2*cos(gam) - 1.0*u2*cos(gam) + u2*sin(gam) + v2*sin(gam)) + 0.7071*cos(gam)*(v2dm - 1.0*r2m*u2) - 0.3536*r1m*(u1 - 1.0*v1 - 1.0*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)) + 0.5303*(r1m - 1.0*u1 + u2*cos(gam) - 1.0*v2*sin(gam))*(u1 - 1.0*v1 - 1.0*u2*cos(gam) + v2*cos(gam) + u2*sin(gam) + v2*sin(gam)) - 0.3536*(u1 - 1.0*u2*cos(gam) + v2*sin(gam))*(r1m + v1 - 1.0*v2*cos(gam) - 1.0*u2*sin(gam)) ■0 ■0 ■0.7071*u1 - 0.7071*v1 - 0.7071*u2*cos(gam) + 0.7071*v2*cos(gam) + 0.7071*u2*sin(gam) + 0.7071*v2*sin(gam) ■0.7071*v1 - 0.7071*u1 + 0.7071*u2*cos(gam) - 0.7071*v2*cos(gam) - 0.7071*u2*sin(gam) - 0.7071*v2*sin(gam) ■0.7071*u2 - 0.7071*v2*cos(2.0*gam) - 0.7071*u2*sin(2.0*gam) - 0.7071*u1*cos(gam) + 0.7071*v1*cos(gam) + 0.7071*u1*sin(gam) - 0.7071*v1*sin(gam) ■0.7071*v2 - 0.7071*u2*cos(2.0*gam) + 0.7071*v2*sin(2.0*gam) + 0.7071*u1*cos(gam) - 0.7071*v1*cos(gam) + 0.7071*u1*sin(gam) - 0.7071*v1*sin(gam) ■0.7071*v2^2*cos(2.0*gam) - 0.7071*u2^2*cos(2.0*gam) + 0.7071*u2dm*cos(gam) - 0.7071*v2dm*cos(gam) - 0.7071*u2dm*sin(gam) - 0.7071*v2dm*sin(gam) + 0.7071*u1*u2*cos(gam) + 0.7071*u1*v2*cos(gam) - 0.7071*u2*v1*cos(gam) - 0.7071*v1*v2*cos(gam) + 0.7071*u1*u2*sin(gam) - 0.7071*u1*v2*sin(gam) - 0.7071*u2*v1*sin(gam) + 0.7071*v1*v2*sin(gam) + 1.414*u2*v2*sin(2.0*gam) ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■-1.0*r1m^2 ■0 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■-1.0*r1m^2 ■0 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■-1.0*r2m^2 ■0 ■0 ■
+0 ■0 ■0 ■0 ■0 ■0 ■0 ■-1.0*r2m^2 ■0 ■
