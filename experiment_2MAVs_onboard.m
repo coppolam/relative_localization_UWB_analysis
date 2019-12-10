@@ -15,8 +15,8 @@ data2 = extractDelimitedFile(datafile2);
 header1 = data1.Properties.VariableNames;
 header2 = data2.Properties.VariableNames;
 
-startt = 100;
-endt = 290;
+startt = 82;
+endt = 240;
 delay = 5;
 
 [syncdata1,syncdata2,tm1,tm2] = syncData(data1,data2,'Range','time');

@@ -5,7 +5,7 @@ printfigs = false;
 % Use the following to reproduce...
 % rngnum = 13 -- Fig 3c + 4e
 % rngnum = 17 -- Fig 3d + 4f
-rngnum = 17;
+rngnum = 13;
 rng(rngnum);
 
 % Other seeds and expected results

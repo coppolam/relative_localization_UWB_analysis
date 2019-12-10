@@ -3,7 +3,6 @@
 init;
 
 scenario = 'circles';
-
 printfigs = true;
 fontsize = 13;
 linewidth = 1.2;
@@ -28,9 +27,6 @@ if (strcmpi(scenario,'circles'))
     arrowint1 = length(traj1)/numarrows1;
     arrowint2 = length(traj2)/numarrows2;
     h = figure('position',[400 400 500 500]);
-    if (printfigs)
-        set(h,'Visible','off');
-    end
     set(gca,'XTick',windowsize(1):xticks:windowsize(2),...
         'YTick',windowsize(3):yticks:windowsize(4),...
         'FontSize',fontsize,...

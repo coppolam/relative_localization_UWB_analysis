@@ -1,8 +1,5 @@
 h = figure;
 set(gca,'xtick',xmin:xtick:xmax,'ytick',ymin:ytick:ymax,'FontSize',fontsize,'FontName','Times');
-if printfigs
-    set(h,'Visible','off');
-end
 colors = get(gca,'colororder');
 hold on;
 grid on;

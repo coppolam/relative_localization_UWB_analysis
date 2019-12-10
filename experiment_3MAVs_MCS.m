@@ -59,8 +59,8 @@ latex_printallfigures(get(0,'Children'), 'figures/','paper_wide_half', 22)
 
 h = newfigure(23);
 plot(bearing44_18(1:numel(rangeerr18)),rangeerr18(1:numel(rangeerr18)),'-'); hold on
-plot(bearing44_18(1:numel(rangeerr18)/2),rangeerr18(1:numel(rangeerr18)/2),'r.')
-plot(bearing44_18(numel(rangeerr18)*(18/20):end),rangeerr18(numel(rangeerr18)*(18/20):end),'r.')
+plot(bearing44_18(1:floor(numel(rangeerr18)/2)),rangeerr18(1:floor(numel(rangeerr18)/2)),'r.')
+plot(bearing44_18(floor(numel(rangeerr18)*(18/20)):end),rangeerr18(floor(numel(rangeerr18)*(18/20)):end),'r.')
 makeaxespi(h,[-pi pi],'x')
 xlabel('Relative bearing [rad]')
 ylabel('Range error [m]')

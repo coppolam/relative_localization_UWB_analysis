@@ -5,9 +5,6 @@ nbins = 50;
 hold on
 grid on
 set(gca,'xtick',xmin:xtick:xmax,'ytick',ymin:ytick:ymax,'FontSize',fontsize,'FontName','Times');
-if printfigs
-    set(h,'Visible','off');
-end
 histogram(rangeerr,nbins);
 axis([xmin xmax ymin ymax]);
 line([mean(rangeerr) mean(rangeerr)],get(gca,'YLim'),'Color','r','linewidth',2);
