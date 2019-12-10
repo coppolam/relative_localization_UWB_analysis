@@ -1,15 +1,56 @@
+
 This repository holds the code to download and analyze the results in the paper:
 
-"On-board range-based relative localization for micro air vehicles in indoor leader–follower flight". Steven van der HelmMario CoppolaEmail authorKimberly N. McGuireGuido C. H. E. de Croon, 2018. Autonomous Robots, March 2019, pp 1-27.
-
-The paper is available open-access at this link: https://link.springer.com/article/10.1007/s10514-019-09843-6
-
-Or use the following link for a PDF: https://link.springer.com/content/pdf/10.1007%2Fs10514-019-09843-6.pdf
+**"On-board range-based relative localization for micro air vehicles in indoor leader–follower flight"**. *Steven van der Helm, Mario Coppola, Kimberly N. McGuire, Guido C. H. E. de Croon, 2018. Autonomous Robots, March 2019, pp 1-27.*
+The paper is available open-access at this link: *https://link.springer.com/article/10.1007/s10514-019-09843-6*
+Or use the following link for a PDF: *https://link.springer.com/content/pdf/10.1007%2Fs10514-019-09843-6.pdf*
 
 To download the data used in the paper, use the script `download_data.sh', or do it manually by following the instructions on top of the script. The data is needed to reproduce the plots as in the paper.
 
 To run and reproduce the results, the following MATLAB scripts can be used:
 
-* `file.m`
-Does thsi
-* `file.m`
+# Code description
+
+### Observability analysis
+
+* `observability_condition_check.m`, *(verifies Equation 36, Appendix A)*
+Symbolically verifies the derived observability condition in the paper (Condition Eq. 36). The analyirical derivation can be found in Appendix A of the paper.
+
+* `plot_unintuitive_conditions.m`, *(reproduces Figures 3c,3d,4e,4f)*.
+Reprocudes the unobservable intuitive conditions as seen in figures 3 and 4.
+
+* `observability_simulator.m`, *(reproduces Figures 5 to 10)*.
+Reproduces the simulation results used to empirically evaluate the observability conditions.
+
+### Noise analysis
+
+* `plot_circular_trajectory.m`, *(reproduces Figure 11)*.
+Reproduces the circular trajectories used in the simulation study, depicted also in Fig. 11 in a more stylized fashion.
+
+* `range_noise_study_generatedata.m`, *(reproduces data from Table 1)*
+Runs EKF instances for different noise levels for both filters and reproduces the data seen in Table 1.
+
+* `.m`, (reproduces Figure )
+
+* `plot_heading_disturbance_sim.m`, *(reproduces Figure 13)*.
+Plots the heading disturbance that was used in the noise analysis, as seen in Figure 13.
+
+* `noisestudy_yaw.m` *(reproduces Figure 14)*
+Based on the data extracted from `range_noise_study.m` (table 1 in the paper) reproduces the impact of disturbance with increasing noise.
+
+* `plotRangeStudyYawnoise.m`
+
+### Data analysis of experimental results
+* `main_analysis_2MAVs_MCS.m`, *(reproduces Figures 16 to 21)*.
+Repro
+* `main_analysis_2MAVs_MCS.m`, *(reproduces Figures 22, 23, 25, 26)*.
+
+* `main_analysis_3MAVs_MCS.m`, *(reproduces Figures 27)*.
+Data analysis for leader-follower the experiment with the 3 MAVs using the sensing of the Motion Capture System (except range, which was measured with Ultra Wideband).
+
+* `main_analysis_3MAVs_onboard.m`
+Data analysis for leader-follower the experiment with the 3 MAVs using onboard sensing.
+
+* `main_analysis_unobservable_MCS.m`, *(reproduces Figure 33)*
+
+

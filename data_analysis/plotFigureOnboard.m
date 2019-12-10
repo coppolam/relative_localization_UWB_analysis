@@ -1,7 +1,8 @@
 clearvars;
+close all
 addpath('../Kalman');
 addpath('../Log_handling');
-datapath = '../../../Data/NDI/01-02-2018/onboard';
+datapath = '../data/01-02-2018/onboard';
 addpath(datapath);
 
 

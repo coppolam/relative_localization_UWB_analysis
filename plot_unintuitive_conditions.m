@@ -1,31 +1,30 @@
 init;
-
-addpath('../Figure_handling');
-n = 7;
-l = 6;
-
 printfigs = false;
 
-% Via random seed
-
+%% Select random seed
+% Use the following to reproduce...
 % rngnum = 13 -- Fig 3c + 4e
 % rngnum = 17 -- Fig 3d + 4f
+rngnum = 17;
+rng(rngnum);
 
+% Other seeds and expected results
 % 6 - clear plot, parallel, nice but full heat map
 % 7 - clear plot, v2 almost 0, circular heat map
 % 8 - clear plot, very clear heat map
 % 9 - clear plot, clear heat map, accelerations almost parallel
 % 23 - clear plot, not parallel, semi clear heat map
-rngnum = 17;
-rng(rngnum);
 
-fontsize = 19;
+%% Analyze
+n = 7;
+l = 6;
 leg1loc = 'best';
 leg2loc = 'best';
+fontsize = 19;
 if rngnum == 13
     leg2loc = 'southwest';
 elseif rngnum == 17
-    leg2loc='northwest';
+    leg2loc ='northwest';
 end
 
 v1range = 5;
@@ -83,6 +82,7 @@ dronewidth = 5;
 p1 = [0;0];
 p2 = p;
 
+%% Make figures
 file = strcat('figures/cond_vectplot',num2str(rngnum),'.eps');
 
 h = figure;
@@ -123,7 +123,7 @@ p
 threshold = 1;
 [X,Y,Z,Zcrit,xarr,yarr] = getHeatCond(state,input,xrange,yrange,threshold,dx,dy);
 
-file = strcat('C:\Users\Steven\Dropbox\Thesis\Figures\Observability\cond_heatplot',num2str(rngnum),'.eps');
+file = strcat('figures/cond_heatplot',num2str(rngnum),'.eps');
 
 fontsize = 20;
 h = figure('Renderer','painters');
