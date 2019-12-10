@@ -1,7 +1,11 @@
 This repository holds the code for the paper:
 
-**"On-board range-based relative localization for micro air vehicles in indoor leader–follower flight"**. *Steven van der Helm, Mario Coppola, Kimberly N. McGuire, Guido C. H. E. de Croon, 2018. Autonomous Robots, March 2019, pp 1-27.*
+**"On-board range-based relative localization for micro air vehicles in indoor leader–follower flight"**.
+*Steven van der Helm, Mario Coppola, Kimberly N. McGuire, Guido C. H. E. de Croon, 2018. 
+Autonomous Robots, March 2019, pp 1-27.*
+
 The paper is available open-access at this link: *https://link.springer.com/article/10.1007/s10514-019-09843-6*
+
 Or use the following link for a PDF: *https://link.springer.com/content/pdf/10.1007%2Fs10514-019-09843-6.pdf*
 
 # Getting the data
