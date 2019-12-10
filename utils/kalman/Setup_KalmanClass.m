@@ -11,9 +11,6 @@ if (obj.type=="IEKF")
     obj.epsilon         = 1e-11;
 end
 
-
-
-
 %% Setting up symbolic functions - no need to change (only change above)!
 %transforming vector function to matlabFunction to speed up evaluation
 %time
