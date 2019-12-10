@@ -1,3 +1,20 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% experiment_3MAVs_MCS.m
+%
+% Data analysis for leader-follower the experiment with the **3 MAVs using the Motion Caputure Sytem** (except range, which was measured with Ultra Wideband).
+% Please note that, depending on the start and end time of the analysis, the pictured distribution may slightly vary from the paper.
+%
+% The code was used in the paper:
+%
+% "On-board range-based relative localization for micro air vehicles in indoor leader–follower flight". 
+% 
+% Steven van der Helm, Mario Coppola, Kimberly N. McGuire, Guido C. H. E. de Croon.
+% Autonomous Robots, March 2019, pp 1-27.
+% The paper is available open-access at this link: https://link.springer.com/article/10.1007/s10514-019-09843-6
+% Or use the following link for a PDF: https://link.springer.com/content/pdf/10.1007%2Fs10514-019-09843-6.pdf
+% 
+% Code written by Steven van der Helm and edited by Mario Coppola
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Initialize
 init;
 printfigs = true;

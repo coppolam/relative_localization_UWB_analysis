@@ -1,7 +1,21 @@
-%% Plot the circular trajectory as stylized in Fig. 11
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% noise_circular_trajectory_plot.m
+%
+% This code reproduces the circular trajectories used in the simulation study, depicted also in Fig. 11 in a more stylized fashion.
+%
+% The code was used in the paper:
+%
+% "On-board range-based relative localization for micro air vehicles in indoor leader–follower flight". 
+% 
+% Steven van der Helm, Mario Coppola, Kimberly N. McGuire, Guido C. H. E. de Croon.
+% Autonomous Robots, March 2019, pp 1-27.
+% The paper is available open-access at this link: https://link.springer.com/article/10.1007/s10514-019-09843-6
+% Or use the following link for a PDF: https://link.springer.com/content/pdf/10.1007%2Fs10514-019-09843-6.pdf
+% 
+% Code written by Steven van der Helm and edited by Mario Coppola
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Initialize
 init;
-
 scenario = 'circles';
 printfigs = true;
 fontsize = 13;
@@ -9,6 +23,7 @@ linewidth = 1.2;
 arrowlength = 30;
 arrowtipangle = 20;
 
+%% Plot
 if (strcmpi(scenario,'circles'))
     windowsize = [-5 5 -5 5];
     xticks = 1;

@@ -1,5 +1,20 @@
-% Plot the results of Figure 14
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% noise_heading_disturbance_analysis.m
+%
+% Based on the data extracted from `range_noise_study.m` (Table 1 in the paper) reproduces the impact of disturbance with increasing noise.
+%
+% The code was used in the paper:
+%
+% "On-board range-based relative localization for micro air vehicles in indoor leader–follower flight". 
+% 
+% Steven van der Helm, Mario Coppola, Kimberly N. McGuire, Guido C. H. E. de Croon.
+% Autonomous Robots, March 2019, pp 1-27.
+% The paper is available open-access at this link: https://link.springer.com/article/10.1007/s10514-019-09843-6
+% Or use the following link for a PDF: https://link.springer.com/content/pdf/10.1007%2Fs10514-019-09843-6.pdf
+% 
+% Code written by Steven van der Helm and edited by Mario Coppola
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Initialize
 init;
 
 printfigs = true;
@@ -8,6 +23,7 @@ linewidth = 1.2;
 datafolder = 'data/';
 filenames = {'storeresmat_type12_compahead','storeresmat_type1_compahead_yawdisturbance'};
 
+%% Load
 load([datafolder,filenames{1},'.mat']);
 storeres2 = storeres;
 load([datafolder,filenames{2},'.mat']);
@@ -22,6 +38,7 @@ for i = plotindices
     percentarr(i,:) = ((storeres2(2,:)-storeres1(i,:))./storeres1(i,:)) * 100;
 end
 
+%% Plot
 file = strcat('figures/head_nohead_disturbance_percentage_mult.eps');
 
 cmap = jet(8);
