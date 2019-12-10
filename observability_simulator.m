@@ -6,9 +6,9 @@ rng(5);
 % Fig 7 = statfollower + acchead
 % Fig 8 = statfollower + acc
 
-% behavior = 'statleader';
+behavior = 'statleader';
 % behavior = 'statfollower';
-behavior = 'parallelequal';
+% behavior = 'parallelequal';
 % behavior = 'paralleldiff';
 % behavior = 'circlexy';
 
@@ -298,8 +298,6 @@ elseif (strcmpi(type,"noacc"))
     kalmanmodel = "Kalman_no_acc";
     kalmantype = "EKF";
 
-
-
     % obj.input = [u1;v1;u2;v2;r1m;r2m];
     noiseinp = [0.2;0.2;0.2;0.2;0.1;0.1];
     noiseinp = zeros(6,1);
@@ -410,9 +408,6 @@ fprintf("Relative vx, vy: %f, %f\n",relvxmean,relvymean);
 fprintf("vx*ex, vy*ey: %f, %f\n",relvxmean*MAEx,relvymean*MAEy);
 
 h = figure;
-if(printfigs)
-    set(h,'Visible','off');
-end
 set(gca,'XTick',0:tticks:tend,'YTick',prange(1):pticks:prange(2),'FontSize', fontsize,'FontUnits','points','FontWeight','normal','FontName','Times');
 hold on
 grid on
@@ -430,15 +425,12 @@ if(pzoom)
     grid(ax2,'on');
 end
 
-file = strcat('C:\Users\Steven\Dropbox\Thesis\Figures\Observability_kinematic\',filename,'_p.eps');
+file = strcat('figures/',filename,'_p.eps');
 if (printfigs)
     print(file,'-depsc2');
 end
 
 h = figure;
-if(printfigs)
-    set(h,'Visible','off');
-end
 set(gca,'XTick',0:tticks:tend,'YTick',gamrange(1):gamticks:gamrange(2),'FontSize',fontsize,'FontUnits','points','FontWeight','normal','FontName','Times');
 hold on
 grid on
@@ -456,7 +448,7 @@ if(gamzoom)
     grid(ax2,'on');
 end
 
-file = strcat('C:\Users\Steven\Dropbox\Thesis\Figures\Observability_kinematic\',filename,'_gamma.eps');
+file = strcat('figures/',filename,'_gamma.eps');
 if (printfigs)
     print(file,'-depsc2');
 end

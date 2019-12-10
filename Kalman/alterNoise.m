@@ -15,7 +15,6 @@ function [ output ] = alterNoise( input,cols,stds )
 matsize = size(input,1);
 output = input;
 
-
 for i =1:length(cols)
    output(:,cols(i)) = output(:,cols(i)) + stds(i)*randn(matsize,1);
 end

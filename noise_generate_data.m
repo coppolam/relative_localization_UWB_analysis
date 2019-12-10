@@ -13,7 +13,7 @@ yawnoisearr = 0.0;
 psource = [4;0];
 radeps =  1;
 tcent = 5;
-nruns = 1000;
+nruns = 10;
 
 tticks = 0.5;
 pticks = 0.5;

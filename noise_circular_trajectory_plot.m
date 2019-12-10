@@ -1,6 +1,6 @@
 %% Plot the circular trajectory as stylized in Fig. 11
 
-init
+init;
 
 scenario = 'circles';
 

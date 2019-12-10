@@ -19,9 +19,6 @@ ymin = 0; ymax = 1; ytick = 0.2;
 fontsize = 20;
 h = figure;
 set(gca,'xtick',xmin:xtick:xmax,'ytick',ymin:ytick:ymax,'FontSize',fontsize,'FontName','Times');
-if (printfigs)
-    set(h,'Visible','off');
-end
 colors = get(gca,'colororder');
 hold on;
 grid on;
@@ -29,6 +26,6 @@ axis([xmin xmax ymin ymax]);
 plot(tarr,d,'linewidth',linewidth);
 xlabel('Time [s]','FontUnits','points','interpreter','latex','FontSize',fontsize,'FontName','Times');
 ylabel('$d(t)$ [rad]','FontUnits','points','interpreter','latex','FontSize',fontsize,'FontName','Times');
-if (printfigs)
+if printfigs
     print(file,'-depsc2');
 end

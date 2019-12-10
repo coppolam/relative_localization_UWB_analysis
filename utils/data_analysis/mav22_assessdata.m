@@ -1,4 +1,3 @@
-
 h22 = cutdata22{:,'gps_z'};
 u22 = cutdata22{:,'gps_vx'};
 v22 = cutdata22{:,'gps_vy'};
