@@ -118,9 +118,6 @@ xverts = [start2 endt2 endt2 start2];
 yverts = [-[threshold threshold] [threshold threshold]];
 dtt = 5;
 h = figure;
-if(printfigs)
-    set(h,'visible','off');
-end
 hold on;
 set(gca,'FontSize',fontsize,...
     'FontUnits','points','FontWeight','normal','FontName','Times',...

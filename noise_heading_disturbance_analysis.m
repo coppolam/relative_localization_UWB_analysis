@@ -5,12 +5,12 @@ init;
 printfigs = true;
 fontsize = 16;
 linewidth = 1.2;
-
+datafolder = 'data/';
 filenames = {'storeresmat_type12_compahead','storeresmat_type1_compahead_yawdisturbance'};
 
-load(strcat(filenames{1},'.mat'));
+load([datafolder,filenames{1},'.mat']);
 storeres2 = storeres;
-load(strcat(filenames{2},'.mat'));
+load([datafolder,filenames{2},'.mat']);
 storeres1 = storeres;
 
 rangenoises = [0,0.1,0.25,0.5,1,2,4,8];
