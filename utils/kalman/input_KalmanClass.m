@@ -3,8 +3,6 @@
 % inputtype = "Kalman_full_no_B";
 
 obj.input = [];
-
-
     
 if obj.kalmanmodel=="Kalman_full_B"
     %% Symbolic equations to change!
